@@ -1,0 +1,13 @@
+<view class="block_index">
+  <view wx:for="{{noe_list}}" wx:key="block_list" class="block_list" 
+  style="top:{{item.top}}vh;{{!ction || item.top < -24?'':'transition: top linear 0.1s;'}}"
+  >
+    <view wx:for="{{item.arr}}" wx:for-item="cell" wx:key="key"
+    style="{{item.index == index?(item.check == 1?'background:#000;':item.check == 2?'background:#aaa;':''):cell == 1?'animation:wrong 3 0.3s;background:#e54d42;':''}}"
+    bindtap="block_tab" data-index="{{item.cell}}" data-status="{{item.index == index?false:true}}" data-arr="noe" data-cell="{{index}}"
+    ></view>
+  </view>
+</view>
+<view class="model" wx:if="{{!ction}}">
+  <view bindtap="list">开始游戏</view>
+</view>

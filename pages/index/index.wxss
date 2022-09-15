@@ -1,0 +1,164 @@
+/**index.wxss**/
+page {
+  height: 100%;
+}
+.line {
+  height: 33%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.blocks {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+.black {
+  background: #000000;
+}
+.black text {
+  color: #ffffff;
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+.btn{
+  background-color: #fff;
+  color: black;
+  border-radius: 12rpx;
+  width: 150rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+}
+
+/*mask*/
+
+.drawer_screen {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background: #000;
+  opacity: 0.5;
+  overflow: hidden;
+}
+
+/*content*/
+
+.drawer_box {
+  width: 95%;
+  overflow: hidden;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  z-index: 1001;
+  margin: -150px 50rpx 0 20rpx;
+  background-color: #fff;
+  border-radius: 10rpx;
+}
+
+.drawer_title {
+  padding: 15px;
+  font: 20px "microsoft yahei";
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+}
+
+.drawer_content {
+  overflow-y: scroll; /*超出父盒子高度可滚动*/
+}
+
+.drawer_content .title {
+  font-size: 30rpx;
+  text-align: left;
+  color: #333;
+  margin-top: -68rpx;
+  display: block;
+  padding: 0 20rpx;
+}
+
+.drawer_content .tel-input {
+  height: 95rpx;
+  border-bottom: 1px solid #a0a0a0;
+  width: 90%;
+  margin: 0 auto;
+  color: #333;
+  text-align: left;
+  font-size: 32rpx;
+}
+
+.btn_ok {
+  display: inline-block;
+  padding: 10px;
+  font: 20px "microsoft yahei";
+  text-align: center;
+  border-top: 1px solid #e8e8ea;
+  color: #fff;
+  background-color: #000;
+  width: 38%;
+  margin: 22rpx auto;
+  border-radius: 25rpx;
+  margin-left: 58rpx;
+}
+
+.form_group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 95%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.form_group input, .form_group picker {
+  width: 676rpx;
+  border-bottom: 1px solid #a0a0a0;
+  height: 121rpx;
+  padding-left: 20rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 32rpx;
+  letter-spacing: 0;
+  line-height: 121rpx;
+}
+
+.form_group .sendmsg_input {
+  width: 348rpx;
+  color: #333;
+}
+
+.form_group .vertificate {
+  width: 326rpx;
+  border-bottom: 1px solid #a0a0a0;
+  height: 121rpx;
+  padding-left: 20rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 32rpx;
+  letter-spacing: 0;
+  line-height: 121rpx;
+  text-align: center;
+}
+
+.vertificate text {
+  color: gray;
+}

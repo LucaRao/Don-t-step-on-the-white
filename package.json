@@ -1,0 +1,22 @@
+{
+  "name": "can-not-click-white",
+  "version": "1.0.0",
+  "description": "> 微信黑白块小游戏",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhange1/can-not-click-white.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhange1/can-not-click-white/issues"
+  },
+  "homepage": "https://github.com/zhange1/can-not-click-white#readme",
+  "dependencies": {
+    "supabase-wechat-stable": "^0.1.7"
+  }
+}

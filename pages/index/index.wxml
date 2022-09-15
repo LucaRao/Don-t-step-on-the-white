@@ -1,0 +1,53 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="line">
+    <view class="blocks black" id="endless" bindtap="goGame">
+      <text>手残模式</text>
+    </view>
+    <view class="blocks" id="time" bindtap="goGame">
+      <text>经典模式</text>
+    </view>
+  </view>
+  <view class="line">
+    <view class="blocks" id="speed" bindtap="goGame">
+      <text>急速模式</text>
+    </view>
+    <view class="blocks black" >
+    <view wx:if="{{!userInfo}}" class="btn" bindtap="login">登录</view>
+    <view wx:if="{{!userInfo}}" class="btn m-t16" bindtap="loginUp">注册</view>
+    <!-- <view class="btn m-t16">游客模式</view> -->
+      <!-- <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image> -->
+      <text wx:if="{{userInfo}}" class="userinfo-nickname">{{userInfo.userName}}</text> 
+      <view wx:if="{{userInfo}}" class="btn m-t16" bindtap="loginOut">退出登录</view>
+  </view>
+  </view>
+  <view class="line">
+    <view class="blocks black">
+      <text>手残最高分数：{{heighestStartScore}}</text>
+      <text class="m-t16">经典最高分数：{{heighestClassicScore}}</text>
+      <text class="m-t16">极速最高分数：{{heighestExtremeSpeedScore}}</text>
+    </view>
+    <view class="blocks" bindtap="rankings">
+      <text>全国排名</text>
+    </view>
+  </view>
+</view> 
+
+    <!--mask-->
+    <view class="drawer_screen" wx:if="{{showModalStatus}}"></view>
+    <!--content-->
+    <!--使用animation属性指定需要执行的动画-->
+    <view class="drawer_box" wx:if="{{showModalStatus}}">
+      <!--drawer content-->
+      <view class="drawer_title">{{maskTitle}}</view>
+      <view class="drawer_content">
+        <input class='tel-input' type='text' placeholder='请输入账号' maxlength="11" bindinput="getUserName"></input>
+        <!-- <view class="form_group"> -->
+          <input type="password" class="tel-input" placeholder="请输入密码" placeholder-class="placeholder_style" bindinput='getPassword' />
+        <!-- </view> -->
+      </view>
+        
+      <view class="btn_ok" bindtap="reviseTap">确定</view>
+      <view class="btn_ok" bindtap="close">取消</view>
+    </view>
+    

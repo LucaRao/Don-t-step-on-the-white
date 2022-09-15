@@ -1,0 +1,49 @@
+<!--logs.wxml-->
+<view wx:if="{{userInfo}}">
+  <!-- 手残模式排名 -->
+  <view class="m-18rpx gradient3">手残模式</view>
+  <view class="playerslist">
+    <view class="table">
+      <view>#</view>
+      <view>姓名</view>
+      <view>分数</view>
+    </view>
+    <view class="list">
+      <view class="player" wx:for="{{get_started_highscore}}" wx:for-item="item" wx:key="*this"><text> {{index+1}}</text>
+        <view class="user"><text> {{item.userName}} </text></view><text> {{item.get_started_highscore}} </text>
+      </view>
+    </view>
+  </view>
+  <!-- 经典模式排名 -->
+  <view class="m-18rpx gradient1">经典模式</view>
+  <view class="playerslist">
+    <view class="table">
+      <view>#</view>
+      <view>姓名</view>
+      <view>分数</view>
+    </view>
+    <view class="list">
+      <view class="player" wx:for="{{classic_highscore}}" wx:for-item="item" wx:key="*this"><text> {{index+1}}</text>
+        <view class="user"><text> {{item.userName}} </text></view><text> {{item.classic_highscore}} </text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 极速模式排名 -->
+  <view class="m-18rpx gradient2">极速模式</view>
+  <view class="playerslist">
+    <view class="table">
+      <view>#</view>
+      <view>姓名</view>
+      <view>分数</view>
+    </view>
+    <view class="list">
+      <view class="player" wx:for="{{extreme_speed_highscore}}" wx:for-item="item" wx:key="*this"><text> {{index+1}}</text>
+        <view class="user"><text> {{item.userName}} </text></view><text> {{item.extreme_speed_highscore}} </text>
+      </view>
+    </view>
+  </view>
+</view>
+<view wx:else>
+登录后才能看到排行榜哦！
+</view>

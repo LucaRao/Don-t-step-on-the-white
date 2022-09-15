@@ -1,0 +1,59 @@
+
+.playerslist {
+  margin-top: 30rpx;
+  font-size: 32rpx;
+  overflow: hidden;
+  color: white;
+  font-family: "Roboto Condensed", sans-serif;
+}
+.table {
+  margin-right: 0.1rem;
+  display: grid;
+  font-size: 28rpxpx;
+  grid-template-columns: 0.4fr 3fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  text-align: center;
+  color: #000;
+}
+.list {
+  overflow: scroll;
+  /* height: 42rpx; */
+  overflow-x: hidden;
+}
+.playerslist .player:nth-child(odd) {
+  background-color: #000;
+  align-items: center;
+  color: #fff;
+}
+.player {
+  background-color: #eae3e3;
+  display: grid;
+  grid-template-columns: 0.4fr 3fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  min-height: 84rpx;
+  text-align: center;
+  padding-right: 20rpx;
+  color:#000;
+}
+.container .user {
+  display: flex;
+  align-items: center;
+  gap: 8rpx;
+}
+.m-18rpx{
+  padding: 18rpx;
+  width: 22%;
+  color: #fff;
+  text-align: center;
+  line-height: 66rpx;
+  margin: 48rpx 0;
+  border-radius: 10rpx;
+}
+.gradient1{
+  background: radial-gradient(circle at 50% 3%,#191818,#777777);
+}
+.gradient2{
+  background: radial-gradient(circle at 44% 50%,#191818,#dadada);
+}
+.gradient3{
+  background: radial-gradient(circle at 44% 50%,#585050,#dadada);
+}
