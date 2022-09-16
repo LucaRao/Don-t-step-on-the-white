@@ -99,7 +99,7 @@ Page({
           //获取最高分将最高分存入当前用户表
           const res = await supabase
             .from('gamer')
-            .update({ classic_highscore: that.data.for_index })
+            .update({ classic_highscore: that.data.for_index }).eq('userName', that.data.userName)
           wx.showModal({
             title: '提示',
             content: '恭喜超过最高分！消灭了' + that.data.for_index + '个黑方块',

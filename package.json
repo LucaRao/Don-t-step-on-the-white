@@ -18,5 +18,8 @@
   "homepage": "https://github.com/zhange1/can-not-click-white#readme",
   "dependencies": {
     "supabase-wechat-stable": "^0.1.7"
+  },
+  "directories": {
+    "lib": "lib"
   }
 }
