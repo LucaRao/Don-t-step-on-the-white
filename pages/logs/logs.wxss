@@ -41,12 +41,12 @@
 }
 .m-18rpx{
   padding: 18rpx;
-  width: 22%;
+  width: 31%;
   color: #fff;
   text-align: center;
   line-height: 66rpx;
   margin: 48rpx 0;
-  border-radius: 10rpx;
+  /* border-radius: 10rpx; */
 }
 .gradient1{
   background: radial-gradient(circle at 50% 3%,#191818,#777777);
