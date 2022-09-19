@@ -26,6 +26,12 @@ npm install supabase-wechat-stable
 ## 体验
 
 
+https://user-images.githubusercontent.com/56021673/190947232-48dc5581-4a8d-4734-90af-f42ccf79afff.mp4
+
+
+
+
+
 ![4c7db59fc62b1409883ead146860c27](https://user-images.githubusercontent.com/56021673/190543189-dbbf8ac0-0b4a-448f-b50c-4e69d6559136.jpg)
 
 ## 如果小程序对您有帮助也可以请我买包辣条吃
