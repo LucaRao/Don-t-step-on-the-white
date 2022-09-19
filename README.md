@@ -30,7 +30,8 @@ npm install supabase-wechat-stable
 
 ## 如果小程序对您有帮助也可以请我买包辣条吃
 
-![Uploading 85f6864727745d11fc66dbb6926bc49.jpg…]()
 
 
 
+
+![微信图片_20220919111533](https://user-images.githubusercontent.com/56021673/190944335-772744d9-7767-4cfc-a595-635274255c2b.jpg)
