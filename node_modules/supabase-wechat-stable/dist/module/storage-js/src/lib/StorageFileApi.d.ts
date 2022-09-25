@@ -85,7 +85,7 @@ export declare class StorageFileApi {
      * @param path The file path to be downloaded, including the path and file name. For example `folder/image.png`.
      */
     download(path: string): Promise<{
-        data: Blob | null;
+        data: any | null;
         error: Error | null;
     }>;
     /**

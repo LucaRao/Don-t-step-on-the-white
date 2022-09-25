@@ -1,15 +1,15 @@
 <!--index.wxml-->
 <view class="container">
   <view class="line">
-    <view class="blocks black" id="endless" bindtap="goGame">
+    <view class="blocks black" id="get_started" bindtap="goGame">
       <text>手残模式</text>
     </view>
-    <view class="blocks" id="time" bindtap="goGame">
+    <view class="blocks" id="classic" bindtap="goGame">
       <text>经典模式</text>
     </view>
   </view>
   <view class="line">
-    <view class="blocks" id="speed" bindtap="goGame">
+    <view class="blocks" id="extreme_speed" bindtap="goGame">
       <text>急速模式</text>
     </view>
     <view class="blocks black" >

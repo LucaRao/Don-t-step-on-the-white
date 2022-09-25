@@ -203,6 +203,14 @@ Page({
     })
   },
   goGame: function(event){
+    if(!this.data.userInfo.userName){
+      wx.showToast({
+        title: '请先加入全国队列哦，请登录',
+        icon: 'none',
+        duration: 3000
+      });
+      return
+    }
     var gameType = event.target.id;
     wx.navigateTo({
       url: '../'+gameType+'/play?userName='+this.data.userInfo.userName

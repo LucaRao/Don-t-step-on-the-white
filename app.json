@@ -1,9 +1,9 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/endless/play",
-    "pages/time/play",
-    "pages/speed/play",
+    "pages/get_started/play",
+    "pages/classic/play",
+    "pages/extreme_speed/play",
     "pages/logs/logs"
   ],
   "window": {
