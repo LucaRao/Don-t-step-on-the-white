@@ -10,7 +10,7 @@
     </view>
     <view class="list">
       <view class="player" wx:for="{{get_started_highscore}}" wx:for-item="item" wx:key="*this"><text> {{index+1}}</text>
-        <view class="user"><text> {{item.userName}} </text></view><text> {{item.get_started_highscore}} </text>
+        <view class="user"><text> {{item.user_name}} </text></view><text> {{item.get_started_highscore}} </text>
       </view>
     </view>
   </view>
@@ -24,7 +24,7 @@
     </view>
     <view class="list">
       <view class="player" wx:for="{{classic_highscore}}" wx:for-item="item" wx:key="*this"><text> {{index+1}}</text>
-        <view class="user"><text> {{item.userName}} </text></view><text> {{item.classic_highscore}} </text>
+        <view class="user"><text> {{item.user_name}} </text></view><text> {{item.classic_highscore}} </text>
       </view>
     </view>
   </view>
@@ -39,7 +39,7 @@
     </view>
     <view class="list">
       <view class="player" wx:for="{{extreme_speed_highscore}}" wx:for-item="item" wx:key="*this"><text> {{index+1}}</text>
-        <view class="user"><text> {{item.userName}} </text></view><text> {{item.extreme_speed_highscore}} </text>
+        <view class="user"><text> {{item.user_name}} </text></view><text> {{item.extreme_speed_highscore}} </text>
       </view>
     </view>
   </view>

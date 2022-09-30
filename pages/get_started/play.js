@@ -8,7 +8,7 @@ Page({
     ction: false,
     for_index: 0,
     endlessScore: 0,
-    userName: null
+    email: null
   },
   list(e) {
     var that = this;
@@ -94,12 +94,10 @@ Page({
       ction: false,
     })
     //登录后才能往用户数据插入新数据，否则只是游客玩法
-    if (that.data.userName != 'undefined') {
+    if (that.data.email != 'undefined') {
       const startData = await supabase
         .from('get_started')
-        .select(`score`).eq("user_name", that.data.userName).order('score', {
-          ascending: false
-        });
+        .select(`score`).eq("user_name", that.data.email).order('score');
       // if (startData && startData.data.data.length > 0) {
         if (startData && startData.data.data.length > 0 && startData.data.data[0].score < that.data.for_index) {
           //获取最高分将最高分存入当前用户表
@@ -108,7 +106,7 @@ Page({
             .update({
               get_started_highscore: that.data.for_index
             })
-            .eq('userName', that.data.userName)
+            .eq('user_name', that.data.email)
           wx.showModal({
             title: '提示',
             content: '恭喜超过最高分！消灭了' + that.data.for_index + '个黑方块',
@@ -135,7 +133,7 @@ Page({
       let {
         error
       } = await supabase.from("get_started").insert({
-        user_name: that.data.userName,
+        user_name: that.data.email,
         score: that.data.for_index
       }, {
         returning: "minimal", // Don't return the value after inserting
@@ -156,7 +154,7 @@ Page({
   onLoad: function (options) {
     var that = this;
     that.setData({
-      userName: options.userName ? options.userName : null
+      email: wx.getStorageSync('userInfo').email ? wx.getStorageSync('userInfo').email : null
     })
     wx.setNavigationBarTitle({
       title: that.data.typeName
